@@ -1,0 +1,1 @@
+Some exercises and examples playing with the MEAN stack
