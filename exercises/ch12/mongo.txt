@@ -1,0 +1,35 @@
+mongod - the service, mongo the command line
+
+mongo
+
+Databases
+db.copyDatabase(<origin>,<destination>)
+db.dropDatabase() - drops current DB
+use <databasename> (switches dbs but also creates a new db)
+show dbs
+
+Users
+db.addUser({})
+db.auth(username, password)
+db.removeUser(<username>)
+db.system.users.find()
+show users
+
+Collections
+show collections
+db.createCollection(<collectionname>)
+db.getCollection(<collectionname>)
+<collectionname>.drop() - deletes collection
+
+Documents
+<collectionname>.find() - returns all documents
+<collectionname>.find({name:param}) - returns query
+<collectionname>.insert({ name: "param" }) - inserts a document
+<collectionname>.remove({name: "param"}) - deletes a document
+<collectionname>.update({name: "param"}) - updates a document
+$inc, $set, $push
+
+General Commands
+exit
+load(script)
+db.shutdownServer()
