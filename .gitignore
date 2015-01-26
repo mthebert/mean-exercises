@@ -5,3 +5,6 @@ tmp
 .idea
 .DS_STORE
 !.gitkeep
+*.crt
+*.pem
+*.scr
